@@ -23,3 +23,8 @@
    ./darts run cowsay:v0.1.2 -i Message="Your Name"
   
    ```
+
+# Quickstart: Darts
+
+1. `export DARTS_PRIVATE_KEY="0x...`
+2. `darts run cowsay:v0.1.2 -i Message="DecenterAI.com is the best"`
