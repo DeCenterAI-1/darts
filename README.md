@@ -20,11 +20,26 @@
    ```
 
    chmod +x darts
-   ./darts run cowsay:v0.1.2 -i Message="Your Name"
+   ./darts run cowsay:v0.1.3 -i Message="Your Name"
   
    ```
 
 # Quickstart: Darts
 
 1. `export DARTS_PRIVATE_KEY="0x...`
-2. `darts run cowsay:v0.1.2 -i Message="DecenterAI.com is the best"`
+2. `darts run cowsay:v0.1.3 -i Message="DecenterAI.com is the best"`
+
+
+## Stable Diffusion
+
+
+### CPU
+```
+darts run github.com/darts2024/dart-isdxl:v0.3.0 -i Prompt="cat sit on a trampoline" -i Device="cpu" -i cpu=10
+```
+
+### GPU [Intel]
+
+```
+darts run github.com/darts2024/dart-isdxl:v0.3.0 -i Prompt="cat sit on a trampoline" -i Device="xpu" 
+```
