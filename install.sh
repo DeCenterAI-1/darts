@@ -9,7 +9,7 @@ GITHUB_REPO=darts
 PRE_RELEASE=${PRE_RELEASE:=false}
 DARTS_HTTP_REQUEST_CLI=${DARTS_HTTP_REQUEST_CLI:="curl"}
 
-version=${version:="v0.201.0"}
+version=${version:="v0.204.0"}
 
 getLatestRelease() {
 
@@ -48,14 +48,14 @@ detect_os_info() {
     echo "Checkout if our latest releases support $OSARCH_$OSNAME: https://github.com/DecenterAI-1/darts/releases/latest"
     exit 1
   fi
-
-}
+ 
+} 
 
 install_darts() {
   DARTS_LOC=${DARTS_LOC:-"/tmp/darts"}
   getLatestRelease
   echo "installing darts:$version"
-  rurl=https://github.com/DecenterAI-1/darts/releases/download/$version/darts-$OSNAME-$OSARCH
+    rurl=https://github.com/DecenterAI-1/darts/releases/download/$version/darts-$OSNAME-$OSARCH
   
   echo "release url=$rurl"
   curl -sSL -o $DARTS_LOC $rurl
@@ -74,6 +74,13 @@ install_darts() {
 #        ;;
 #    esac
   sudo cp $DARTS_LOC /usr/local/bin/
+
+  if command -v darts >/dev/null 2>&1; then
+    echo "Installed darts successfully!"
+  else
+    echo "Darts installation failed or not found in /usr/local/bin"
+  fi
+
 
   # if curl -sSL -o $DARTS_LOC.tar.gz "$rurl"; then
   #   echo "Download successful!"
@@ -100,7 +107,11 @@ install_bacalhau() {
 
   # Install bacalhau using curl
 
-  curl -sL https://get.bacalhau.org/install.sh | sudo BACALHAU_VERSION=v1.2.3 bash
+  curl -sL https://get.bacalhau.org/install.sh | sudo BACALHAU_VERSION=v1.2.3 bash > /dev/null 2>&1
+
+  sudo ln -s /usr/local/bin/bacalhau /usr/local/bin/b
+
+  echo "aliased b=bacalhau"
 }
 
 main() {
@@ -112,8 +123,9 @@ main() {
   fi
 
   if [ "$1" = "all" ]; then
-    install_darts
-    install_bacalhau
+    install_darts &
+    install_bacalhau & 
+    wait
   elif [ "$1" = "bacalhau" ]; then
     install_bacalhau
   elif [ "$1" = "darts" ]; then
@@ -122,8 +134,27 @@ main() {
     echo "Usage: $0 [all|bacalhau|darts]"
     exit  1
   fi
+
+  cat << EOF
+        _______ _    _          _   _ _  __ __     ______  _    _
+        |__   __| |  | |   /\   | \ | | |/ / \ \   / / __ \| |  | |
+          | |  | |__| |  /  \  |  \| |   /   \ \_/ / |  | | |  | |
+          | |  |  __  | / /\ \ |     |  <     \   /| |  | | |  | |
+          | |  | |  | |/ ____ \| |\  |   \     | | | |__| | |__| |
+          |_|  |_|  |_/_/    \_\_| \_|_|\_\    |_|  \____/ \____/
+
+      Thanks for installing Darts! We're hoping to unlock an new world of more efficient AI Applications, and would really love to hear from you on how we can improve.
+
+      - ⭐️ Give us a star on GitHub (https://github.com/DecenterAI-1/darts)
+      - 🧑‍💻 Request a feature! (https://github.com/DecenterAI-1/darts/issues/new)
+      - 🐛 File a bug! (https://github.com/DecenterAI-1/darts/issues/new)
+      - ❓ Join our Community! (https://t.me/decenterai)
+      - 📰 Checkout our docs! (https://decenter-ai.gitbook.io/)
+
+      Thanks again!
+      ~ Team DecenterAI
+EOF
 }
 
 
 main "$@" || exit  1
-
