@@ -99,6 +99,28 @@ darts run isdxl:v0.3.0 -i Device="xpu" -i Seed=42 -i Prompt="A hyperrealistic po
   </table>
 </p>
 
+---
+
+```shell
+darts run isdxl:v0.3.0 -i Prompt="mind dreaming of a futuristic aircraft" -i Seed="1" -i Device="xpu"
+```
+
+
+<p align="center">
+  <table>
+    <tr>
+      <td><img src="https://github.com/user-attachments/assets/5026abe3-2718-450f-89ed-5e511ce47905 alt="Futuristic aircraft" width="300"></td>
+      <td><img src="(https://github.com/user-attachments/assets/ac24833e-838a-4d07-8d58-e3408508315b" alt="Futuristic aircraft" width="300"></td>
+      <td><img src="https://github.com/user-attachments/assets/c7a4c5e9-6713-4b7e-a2ac-7a78414f5491" alt="Futuristic aircraft" width="300"></td>
+    </tr>
+    <tr>
+      <td align="center">Seed 1</td>
+      <td align="center">Seed 40</td>
+      <td align="center">Seed 12</td>
+    </tr>
+  </table>
+</p>
+
 
 ## Changelog
 * d4cf78c doc: tidy
