@@ -53,39 +53,48 @@
 
 ```
 
-  🖼 isdxl Module: Stable Diffusion
-
-
+🖼 isdxl Module: Stable Diffusion
 
 ---
 
 ```shell
-  darts run isdxl:v0.3.0 -i Device="xpu" -i Seed=42 -i Prompt="A hyperrealistic portrait of a futuristic cityscape at sunset, with towering skyscrapers and neon-lit streets. A flying car hovers near a glass bridge, reflecting soft orange and pink hues. The scene is detailed with glowing billboards, distant mountains, and a bustling crowd below. The lighting emphasizes the vibrant colors of the sunset blending with the neon glow. Shot in cinematic widescreen with depth-of-field effects, creating an immersive sci-fi atmosphere" 
-  ```
+darts run github.com/darts2024/dart-isdxl:v0.3.0 -i Prompt="cat sit on a trampoline" -i Device="cpu" -i cpu=10
+```
 
-  <p align="center">
-    <table>
-      <tr>
-        <td><img src="https://github.com/user-attachments/assets/e6c82290-55da-453e-9dd5-e6c8cc6b1cd3" alt="Futuristic skyscraper" width="300"></td>
-        <td><img src="https://github.com/user-attachments/assets/1486b95b-ec8b-4b88-9445-2b3f9b99dbbe" alt="Futuristic skyscraper1" width="300"></td>
-        <td><img src="https://github.com/user-attachments/assets/5a07e80a-8c81-433c-ab85-a367a677c14e" alt="Futuristic skyscraper2" width="300"></td>
-      </tr>
-      <tr>
-        <td align="center">Seed 42</td>
-        <td align="center">Seed 30</td>
-        <td align="center">Seed 100</td>
-      </tr>
-    </table>
-  *Figure: A hyperrealistic portrait of a futuristic cityscape at sunset, with towering skyscrapers and neon-lit streets. A flying car hovers near a glass bridge, reflecting soft orange and pink hues. The scene is detailed with glowing billboards, distant mountains, and a bustling crowd below. The lighting emphasizes the vibrant colors of the sunset blending with the neon glow. Shot in cinematic widescreen with depth-of-field effects, creating an immersive sci-fi atmosphere.*
- </p>
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/9d0ddc75-2965-45de-bbeb-624304a9d3aa" alt="Cat Sitting on Trampoline" width="300">
+<br>
+*Figure: A cat enjoying its time on a trampoline.*
+</p>
+
+---
+
+```shell
+darts run isdxl:v0.3.0 -i Device="xpu" -i Seed=42 -i Prompt="A hyperrealistic portrait of a futuristic cityscape at sunset, with towering skyscrapers and neon-lit streets. A flying car hovers near a glass bridge, reflecting soft orange and pink hues. The scene is detailed with glowing billboards, distant mountains, and a bustling crowd below. The lighting emphasizes the vibrant colors of the sunset blending with the neon glow. Shot in cinematic widescreen with depth-of-field effects, creating an immersive sci-fi atmosphere" 
+```
+
+<p align="center">
+  <table>
+    <tr>
+      <td><img src="https://github.com/user-attachments/assets/e6c82290-55da-453e-9dd5-e6c8cc6b1cd3" alt="Futuristic skyscraper" width="300"></td>
+      <td><img src="https://github.com/user-attachments/assets/1486b95b-ec8b-4b88-9445-2b3f9b99dbbe" alt="Futuristic skyscraper1" width="300"></td>
+      <td><img src="https://github.com/user-attachments/assets/5a07e80a-8c81-433c-ab85-a367a677c14e" alt="Futuristic skyscraper2" width="300"></td>
+    </tr>
+    <tr>
+      <td align="center">Seed 42</td>
+      <td align="center">Seed 30</td>
+      <td align="center">Seed 100</td>
+    </tr>
+  </table>
+</p>
 
 ## Changelog
-
-* 3468414 doc: installation sdxl module
+* d4cf78c doc: tidy
+* 5708c4a tidy: figure
 
 🙏 Thanks
 
-Those were the changes on v0.205.2!
+Those were the changes on v0.205.3!
 
 
 🔄 Update Notes
