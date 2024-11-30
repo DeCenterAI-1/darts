@@ -84,10 +84,11 @@ darts run github.com/darts2024/dart-isdxl:v0.3.0 -i Prompt="Beautiful girll" -i 
 darts run isdxl:v0.3.0 -i Device="xpu" -i Seed=42 -i Prompt="A hyperrealistic portrait of a futuristic cityscape at sunset, with towering skyscrapers and neon-lit streets. A flying car hovers near a glass bridge, reflecting soft orange and pink hues. The scene is detailed with glowing billboards, distant mountains, and a bustling crowd below. The lighting emphasizes the vibrant colors of the sunset blending with the neon glow. Shot in cinematic widescreen with depth-of-field effects, creating an immersive sci-fi atmosphere" 
 ```
 
+
 <p align="center">
   <table>
     <tr>
-      <td><img src="https://github.com/user-attachments/assets/e6c82290-55da-453e-9dd5-e6c8cc6b1cd3" alt="Futuristic skyscraper" width="300"></td>
+      <td><img src="https://github.com/user-attachments/assets/8769b88a-c371-40f0-8814-1d38253c20ab" alt="Futuristic skyscraper" width="300"></td>
       <td><img src="https://github.com/user-attachments/assets/1486b95b-ec8b-4b88-9445-2b3f9b99dbbe" alt="Futuristic skyscraper1" width="300"></td>
       <td><img src="https://github.com/user-attachments/assets/5a07e80a-8c81-433c-ab85-a367a677c14e" alt="Futuristic skyscraper2" width="300"></td>
     </tr>
