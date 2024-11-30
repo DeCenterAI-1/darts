@@ -110,7 +110,7 @@ darts run isdxl:v0.3.0 -i Prompt="mind dreaming of a futuristic aircraft" -i See
   <table>
     <tr>
       <td><img src="https://github.com/user-attachments/assets/5026abe3-2718-450f-89ed-5e511ce47905 alt="Futuristic aircraft" width="300"></td>
-      <td><img src="(https://github.com/user-attachments/assets/ac24833e-838a-4d07-8d58-e3408508315b" alt="Futuristic aircraft" width="300"></td>
+      <td><img src="https://github.com/user-attachments/assets/ac24833e-838a-4d07-8d58-e3408508315b" alt="Futuristic aircraft" width="300"></td>
       <td><img src="https://github.com/user-attachments/assets/c7a4c5e9-6713-4b7e-a2ac-7a78414f5491" alt="Futuristic aircraft" width="300"></td>
     </tr>
     <tr>
