@@ -53,6 +53,8 @@ detect_os_info() {
 
 install_darts() {
   DARTS_LOC=${DARTS_LOC:-"/tmp/darts"}
+  DARTS_INSTALL_LOC=${DARTS_INSTALL_LOC:-"/usr/local/bin"}
+
   getLatestRelease
   echo "installing darts:$version"
     rurl=https://github.com/DecenterAI-1/darts/releases/download/$version/darts-$OSNAME-$OSARCH
@@ -73,7 +75,7 @@ install_darts() {
 #        echo "Invalid choice. Please enter y or n."
 #        ;; 
 #    esac
-  cp $DARTS_LOC /usr/local/bin/
+  cp $DARTS_LOC $DARTS_INSTALL_LOC 
 
   if command -v darts >/dev/null 2>&1; then
     echo "Installed darts successfully!"
