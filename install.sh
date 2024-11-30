@@ -64,16 +64,16 @@ install_darts() {
 #  read -p "Do you want to install darts? (y/n): " choice
 #    case "$choice" in
 #      y|Y )
-#        sudo cp darts /usr/local/bin/
+#        cp darts /usr/local/bin/
 #        ;;
 #      n|N )
 #        echo "darts installation canceled."
 #        ;;
 #      * )
 #        echo "Invalid choice. Please enter y or n."
-#        ;;
+#        ;; 
 #    esac
-  sudo cp $DARTS_LOC /usr/local/bin/
+  cp $DARTS_LOC /usr/local/bin/
 
   if command -v darts >/dev/null 2>&1; then
     echo "Installed darts successfully!"
@@ -107,9 +107,9 @@ install_bacalhau() {
 
   # Install bacalhau using curl
 
-  curl -sL https://get.bacalhau.org/install.sh | sudo BACALHAU_VERSION=v1.2.3 bash > /dev/null 2>&1
+  curl -sL https://get.bacalhau.org/install.sh | BACALHAU_VERSION=v1.2.3 bash > /dev/null 2>&1
 
-  sudo ln -s /usr/local/bin/bacalhau /usr/local/bin/b
+  ln -s /usr/local/bin/bacalhau /usr/local/bin/b
 
   echo "aliased b=bacalhau"
 }
