@@ -55,7 +55,6 @@
 
 🖼 isdxl Module: Stable Diffusion
 
----
 
 ```shell
 darts run github.com/darts2024/dart-isdxl:v0.3.0 -i Prompt="cat sit on a trampoline" -i Device="cpu" -i cpu=10
@@ -65,6 +64,18 @@ darts run github.com/darts2024/dart-isdxl:v0.3.0 -i Prompt="cat sit on a trampol
   <img src="https://github.com/user-attachments/assets/9d0ddc75-2965-45de-bbeb-624304a9d3aa" alt="Cat Sitting on Trampoline" width="300">
 <br>
 *Figure: A cat enjoying its time on a trampoline.*
+</p>
+
+---
+
+```shell
+darts run github.com/darts2024/dart-isdxl:v0.3.0 -i Prompt="Beautiful girll" -i Device="xpu"
+```
+
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/f12ba093-560f-4087-b12e-b5a63e1bec98" alt="Beautiful Girl" width="250">
+<br>
+   *Figure Beautiful Girl*
 </p>
 
 ---
@@ -87,6 +98,7 @@ darts run isdxl:v0.3.0 -i Device="xpu" -i Seed=42 -i Prompt="A hyperrealistic po
     </tr>
   </table>
 </p>
+
 
 ## Changelog
 * d4cf78c doc: tidy
