@@ -88,10 +88,10 @@ darts run isdxl:v0.3.0 -i Device="xpu" -i Seed=42 -i Prompt="A hyperrealistic po
 <p align="center">
   <table>
     <tr>
-      <td><img src="https://github.com/user-attachments/assets/8769b88a-c371-40f0-8814-1d38253c20ab" alt="Futuristic skyscraper" width="300"></td>
-      <td><img src="https://github.com/user-attachments/assets/1486b95b-ec8b-4b88-9445-2b3f9b99dbbe" alt="Futuristic skyscraper1" width="300"></td>
-      <td><img src="https://github.com/user-attachments/assets/5a07e80a-8c81-433c-ab85-a367a677c14e" alt="Futuristic skyscraper2" width="300"></td>
-    </tr>
+       <td><img src="https://github.com/user-attachments/assets/e6c82290-55da-453e-9dd5-e6c8cc6b1cd3" alt="Futuristic skyscraper" width="300"></td>
+       <td><img src="https://github.com/user-attachments/assets/1486b95b-ec8b-4b88-9445-2b3f9b99dbbe" alt="Futuristic skyscraper1" width="300"></td>
+       <td><img src="https://github.com/user-attachments/assets/5a07e80a-8c81-433c-ab85-a367a677c14e" alt="Futuristic skyscraper2" width="300"></td>
+     </tr>
     <tr>
       <td align="center">Seed 42</td>
       <td align="center">Seed 30</td>
@@ -110,7 +110,7 @@ darts run isdxl:v0.3.0 -i Prompt="mind dreaming of a futuristic aircraft" -i See
 <p align="center">
   <table>
     <tr>
-      <td><img src="https://github.com/user-attachments/assets/5026abe3-2718-450f-89ed-5e511ce47905 alt="Futuristic aircraft" width="300"></td>
+      <td><img src="https://github.com/user-attachments/assets/8769b88a-c371-40f0-8814-1d38253c20ab" alt="Futuristic aircraft" width="300"></td>
       <td><img src="https://github.com/user-attachments/assets/ac24833e-838a-4d07-8d58-e3408508315b" alt="Futuristic aircraft" width="300"></td>
       <td><img src="https://github.com/user-attachments/assets/c7a4c5e9-6713-4b7e-a2ac-7a78414f5491" alt="Futuristic aircraft" width="300"></td>
     </tr>
