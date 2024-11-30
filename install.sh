@@ -80,7 +80,7 @@ install_darts() {
   if command -v darts >/dev/null 2>&1; then
     echo "Installed darts successfully!" in "$DARTS_INSTALL_LOC"
   else
-    echo "Darts installation failed or not found in /usr/local/bin"
+    echo "Darts installation failed or not found in PATH"
   fi
 
 
