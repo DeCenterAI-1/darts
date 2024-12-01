@@ -52,7 +52,7 @@ detect_os_info() {
 } 
 
 install_darts() {
-  DARTS_LOC=${DARTS_LOC:-"/tmp/darts"}
+  DARTS_LOC=${DARTS_LOC:-"/tmp/darts-binary"}
   DARTS_INSTALL_LOC=${DARTS_INSTALL_LOC:-"/usr/local/bin"}
 
   getLatestRelease
