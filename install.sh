@@ -9,7 +9,9 @@ GITHUB_REPO=darts
 PRE_RELEASE=${PRE_RELEASE:=false}
 DARTS_HTTP_REQUEST_CLI=${DARTS_HTTP_REQUEST_CLI:="curl"}
 
-version=${version:="v0.204.0"}
+
+
+version=${DARTS_VERSION:=""} #v0.701.0
 
 getLatestRelease() {
 
@@ -55,9 +57,11 @@ install_darts() {
   DARTS_LOC=${DARTS_LOC:-"/tmp/darts-binary"}
   DARTS_INSTALL_LOC=${DARTS_INSTALL_LOC:-"/usr/local/bin/darts"}
 
-  getLatestRelease
+  if [[ "$version" == "" ]]; then
+      getLatestRelease
+  fi
   echo "installing darts:$version"
-    rurl=https://github.com/DecenterAI-1/darts/releases/download/$version/darts-$OSNAME-$OSARCH
+  rurl=https://github.com/DecenterAI-1/darts/releases/download/$version/darts-$OSNAME-$OSARCH
   
   echo "release url=$rurl"
   curl -sSL -o $DARTS_LOC $rurl
