@@ -115,7 +115,7 @@ install_bacalhau() {
 
   # you can use v1.3.0 as well
 
-  curl -sL https://get.bacalhau.org/install.sh | BACALHAU_VERSION=v1.3.0 bash > /dev/null 2>&1
+  curl -sL https://get.bacalhau.org/install.sh | BACALHAU_VERSION=v1.3.2 bash > /dev/null 2>&1
 
   ln -s /usr/local/bin/bacalhau /usr/local/bin/b
 
