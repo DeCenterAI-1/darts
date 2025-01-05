@@ -113,7 +113,9 @@ install_bacalhau() {
 
   # Install bacalhau using curl
 
-  curl -sL https://get.bacalhau.org/install.sh | BACALHAU_VERSION=v1.2.3 bash > /dev/null 2>&1
+  # you can use v1.3.0 as well
+
+  curl -sL https://get.bacalhau.org/install.sh | BACALHAU_VERSION=v1.3.0 bash > /dev/null 2>&1
 
   ln -s /usr/local/bin/bacalhau /usr/local/bin/b
 
