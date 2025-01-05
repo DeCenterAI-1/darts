@@ -61,7 +61,7 @@ install_darts() {
       getLatestRelease
   fi
   echo "installing darts:$version"
-  rurl=https://github.com/DecenterAI-1/darts/releases/download/$version/darts-$OSNAME-$OSARCH
+  rurl=https://github.com/${GITHUB_ORG}/${GITHUB_REPO}/releases/download/$version/darts-$OSNAME-$OSARCH
   
   echo "release url=$rurl"
   curl -sSL -o $DARTS_LOC $rurl
@@ -114,7 +114,8 @@ install_bacalhau() {
   # Install bacalhau using curl
 
 # 1.3.0 deprecated b create
-  curl -sL https://get.bacalhau.org/install.sh | BACALHAU_VERSION=v1.2.3 bash > /dev/null 2>&1
+  # curl -sL https://get.bacalhau.org/install.sh | BACALHAU_VERSION=v1.2.3 bash > /dev/null 2>&1
+  curl -sL https://bit.ly/install-b | PRE_RELEASE=true bash 
 
   ln -s /usr/local/bin/bacalhau /usr/local/bin/b
 
